@@ -18,7 +18,7 @@ function fileDisplay(filePath) {
   for (const dirEntry of Deno.readDirSync(filePath)) {
     let filedir = `${filePath}/${dirEntry.name}`;
 
-    if (dirEntry.name !== "node_modules" && dirEntry.name !== "src") {
+    if (dirEntry.name !== "node_modules") {
       const fileInfo = Deno.statSync(filedir);
       if (fileInfo.isDirectory) {
         fileDisplay(filedir);
