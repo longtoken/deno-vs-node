@@ -1,0 +1,12 @@
+{
+  "name": "node-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node-run.js",
+    "ast": "node jsRename.js"
+  },
+  "author": "keefer",
+  "license": "ISC"
+}
